@@ -1,5 +1,24 @@
 # FAKE EMAIL AND PASSWORD GENERATOR
 
+## How to Run
+1. Open your git bash and clone this repository
+    ```sh
+    git clone https://github.com/malikrafsan/FakeEmail-Password-Generator.git
+    ```
+2. Change directory to website directory
+    ```sh
+    cd fake-email-password-generator/
+    ```
+3. Install dependencies
+    ```
+    npm install
+    ```
+4. Run this react website
+    ```
+    npm run start
+    ```
+4. Browser will automatically open our website
+
 ## Developments Guides
 1. Untuk development website, semua file berada di folder src, folder public jangan diubah
 2. Setiap komponen / elemen di website, seperti navbar, password generator page, dll ada file javascripts dan css-nya masing-masing
