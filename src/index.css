@@ -1,13 +1,13 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* README 
+* Kalau bisa sesedikit mungkin pake `!important`
+* Kalau bisa jangan pake inline-styling, jadi styling-nya semua di CSS
+* Styling-nya keknya belum perlu responsive, jadi ga perlu dicek di hp tampilannya kek gimana
+* Styling-nya disesuaikan yaa tempatnya sesuai comment
+* SEMANGAT!!
+*/
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/* Root Styles */
+
+
+
+
