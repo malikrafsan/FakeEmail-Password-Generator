@@ -1,1 +1,43 @@
-/* Navbar Styles */
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+
+.navbar {
+    font-weight:lighter;
+    font-size: x-large;
+    font-family: 'Monda', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: -10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0B100F;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #055337;
+    transition: all ease 0.3s;
+}
+
+.logo {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float:left;
+    padding: 14px 16px;
+    background-color: #055337
+}
+
