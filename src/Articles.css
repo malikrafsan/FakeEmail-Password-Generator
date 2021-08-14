@@ -1,1 +1,28 @@
 /* Articles Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+
+.articles {
+    background-image: url("./a_white_bg.jpg");
+}
+
+.topArticles {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #0B100F;
+    text-align: center;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 500;
+    padding-top: 24px;
+    padding-bottom: 216px;
+}
+
+.linkClick {
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,57 @@
+/* Style gambar & isi artikel 1 (tentang privasi) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+
+.post1 {
+    flex: 9;
+}
+
+.post1Container {
+    padding-left: 90px;
+    padding-top: 69px;
+    padding-bottom: 69px;
+    width: 70%;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+}
+
+.post1ImgTitle {
+    width: 100%;
+    object-fit: cover;
+}
+
+.post1P1 {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 45px;
+}
+
+.post1Img1 {
+    width: 100%;
+    object-fit: cover;
+}
+
+.imgDescTxt {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #8A8A8A;
+}
+
+.post1P2 {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 25px;
+}

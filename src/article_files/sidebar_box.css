@@ -1,0 +1,33 @@
+/* Style buat 1 buah ad yang bisa diklik */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.adBox {
+    width: 312PX;
+    height: 274px;
+}
+
+.linkClick {
+    text-decoration: none;
+}
+
+.thinLine {
+    border-top: 1px solid #8a8a8a;
+}
+
+.adImg {    
+    width: 311PX;
+    height: 156px;
+    object-fit: cover;
+}
+
+.adTitle {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #ABABAB;
+}
+
+.arrow {
+    width: 25px;
+    height: 20px;
+}

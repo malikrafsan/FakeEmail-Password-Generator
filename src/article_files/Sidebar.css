@@ -1,0 +1,18 @@
+/* Style sidebar isi link2 berita di kanan artikel2 */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.sidebar {
+    padding-right: 30px;
+    padding-top: 69px;
+}
+
+.thickLine {
+    border-top: 3px double;
+}
+
+.sidebarTitle {
+    font-family: 'Lato', sans-serif;
+    font-size: 34px;
+    font-weight: 300;
+}
+
