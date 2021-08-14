@@ -1,1 +1,73 @@
 /* Email Styles */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Lato:wght@300;400;900&display=swap');
+
+
+.copy-btn {
+    float:right;
+    background-color: transparent;
+    border:none;
+}
+
+.copy-icon {
+    filter: invert(60%);
+}
+
+/* belum ditambahin background */
+
+body {
+    background-color: black;  
+}
+
+.email-box {
+    margin:auto;
+    border-style:none none solid;
+    border-color:#C4C4C4;
+    border-width:2px;
+    width: 320px;
+    height:20px;
+    margin:auto;
+    padding:10px 0 10px 10px;
+}
+
+.email {
+    text-align: center;
+    margin:0;
+    color:white;
+    font-family: 'Lato', sans-serif;
+}
+
+.generate-btn {
+    background-color:#29342F;
+    color:white;
+    width:100px;
+    margin-top:15px;
+    position:absolute;
+    left:53.5%;
+    border-radius:15px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border:1px solid white;
+}
+
+.generate-btn:hover {
+    background-color:black;
+    color:grey;
+    transition-duration:0.4s;
+    border:1px solid grey;
+}
+
+.email-txt {
+    font-family: 'Fira Code', monospace;
+    font-size:18px;
+}
+
+h1 {
+    font-weight:400;
+}
+
+p {
+    font-size:small;
+    font-weight:100;
+}
