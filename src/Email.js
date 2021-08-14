@@ -28,13 +28,16 @@ const Email = () => {
 
   return (
     <div className="email">
-      <h1>INI TEMP EMAIL</h1>
-      <span>{fakeEmail}</span>
-      <CopyToClipboard text={fakeEmail} onCopy={handleClipBoardClick}>
-        <button>Copy</button>
-      </CopyToClipboard>
-      <button onClick={updateEmail}>
-        Generate Fake Email
+      <h1>Everything in your hands.</h1>
+      <p>Generate usable, temporary e-mail for maximum privacy and security.</p>
+      <div className="email-box">
+        <span className="email-txt">{fakeEmail}</span>
+        <CopyToClipboard text={fakeEmail} onCopy={handleClipBoardClick}>
+          <button className="copy-btn"><img className="copy-icon" src="https://img.icons8.com/material-outlined/24/000000/copy.png"/></button>
+        </CopyToClipboard>
+      </div>
+      <button className="generate-btn" onClick={updateEmail}>
+        Generate E-mail
       </button>
     </div>
   );
