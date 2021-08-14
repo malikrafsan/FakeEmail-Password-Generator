@@ -18,7 +18,7 @@ const SidebarBox4 = () => {
                 <br/>VPN: mitos dan miskonsepsi
             </span>
             <div className="arrow">
-                <i class="far fa-angle-double-right"></i>
+                <i className="far fa-angle-double-right"></i>
             </div>
         </Link>
         </div>

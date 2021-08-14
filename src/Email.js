@@ -33,10 +33,10 @@ const Email = () => {
       <div className="email-box">
         <span className="email-txt">{fakeEmail}</span>
         <CopyToClipboard text={fakeEmail} onCopy={handleClipBoardClick}>
-          <button className="copy-btn"><img className="copy-icon" src="https://img.icons8.com/material-outlined/24/000000/copy.png"/></button>
+          <button className="btn copy-btn"><img className="copy-icon" src="https://img.icons8.com/material-outlined/24/000000/copy.png" alt="clipboard-icon"/></button>
         </CopyToClipboard>
       </div>
-      <button className="generate-btn" onClick={updateEmail}>
+      <button className="btn generate-btn" onClick={updateEmail}>
         Generate E-mail
       </button>
     </div>

@@ -1,43 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
-
 .navbar {
     font-weight:lighter;
     font-size: x-large;
-    font-family: 'Monda', sans-serif;
+    /* font-family: 'Monda', sans-serif; */
+    width: 100%;
+    min-height: 70px;
 }
 
 ul {
     list-style-type: none;
-    margin: -10px;
+    /* margin: -10px; */
     padding: 0;
     overflow: hidden;
     background-color: #0B100F;
-  }
-  
-  li {
+    min-height: 70px;
+}
+
+li {
     float: right;
-  }
-  
-  li a {
+}
+
+li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  li a:hover {
+}
+
+li a:hover {
     background-color: #055337;
     transition: all ease 0.3s;
 }
-
+.logo-container {
+  height: 100%;
+}
 .logo {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     float:left;
-    padding: 14px 16px;
-    background-color: #055337
+    padding: 18px 16px;
+    background-color: #055337;
+    height: 70px;
+    box-sizing: border-box;
 }
 

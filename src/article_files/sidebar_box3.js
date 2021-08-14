@@ -18,7 +18,7 @@ const SidebarBox3 = () => {
                 <br/>10 best practice cybersecurity sehari-hari
             </span>
             <div className="arrow">
-                <i class="far fa-angle-double-right"></i>
+                <i className="far fa-angle-double-right"></i>
             </div>
         </Link>
         </div>

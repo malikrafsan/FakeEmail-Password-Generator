@@ -18,7 +18,7 @@ const SidebarBox2 = () => {
                 <br/>Bagaimana data SEMUA anggota pemerintah AS bocor
             </span>
             <div className="arrow">
-                <i class="far fa-angle-double-right"></i>
+                <i className="far fa-angle-double-right"></i>
             </div>
         </Link>
         </div>

@@ -12,28 +12,24 @@
     filter: invert(60%);
 }
 
-/* belum ditambahin background */
-
-body {
-    background-color: black;  
-}
-
 .email-box {
-    margin:auto;
+    margin: auto;
     border-style:none none solid;
     border-color:#C4C4C4;
     border-width:2px;
-    width: 320px;
+    width: 400px;
     height:20px;
-    margin:auto;
     padding:10px 0 10px 10px;
 }
 
 .email {
+    margin-top: 20vh;
     text-align: center;
-    margin:0;
     color:white;
     font-family: 'Lato', sans-serif;
+}
+.email h1, .email p {
+    margin: 2%;
 }
 
 .generate-btn {
@@ -42,7 +38,7 @@ body {
     width:100px;
     margin-top:15px;
     position:absolute;
-    left:53.5%;
+    left:58%;
     border-radius:15px;
     padding-left:20px;
     padding-right:20px;
@@ -60,14 +56,19 @@ body {
 
 .email-txt {
     font-family: 'Fira Code', monospace;
-    font-size:18px;
+    font-size:1.5rem;
 }
 
 h1 {
     font-weight:400;
+    font-size: 3rem;
 }
 
 p {
-    font-size:small;
+    /* font-size:small; */
     font-weight:100;
+}
+
+.btn:hover {
+    cursor: pointer;
 }
