@@ -2,7 +2,18 @@
 body{
 	background-image: url(background-image.png);
 	background-color: black;
+	font-family: 'Fira code', monospace;
 	color: white;
+	padding-left: 410px;
+	padding-top: 200px;
+}
+
+h2{
+	font-weight: 400;
+}
+
+.caption-chkbox{
+	float: left;
 }
 
 .row:after{
@@ -32,14 +43,35 @@ body{
 	padding: 1%;
 	border-bottom: 3px solid white;
 }
-.fa-copy {
+
+.icon{
+	float: right;
+	background-color: transparent;
+	border: none;
+	filter: invert(60%);
+}
+
+.pass-length{
+	width: 15%;
+	float: right;
+}
+
+.option{
+	padding-left: 10px;
 	float: right;
 }
 
 .generate-button{
 	background: rgba(0, 200, 100, .5);
 	color: white;
-	padding: 14px 20px;
+	padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 	border-radius: 18px;
 	border-color: white;
+}
+
+.link-footer{
+	text-decoration: underline;
 }

@@ -7,30 +7,34 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
-		<!-- Hapus tag <label for="space"> dan propery id="space" di <textarea> biar mirip sama yang di Figma-->
-		<!-- <label for="space">Password Generator<br></label>
+		<h2>Passwordmu di tanganmu.</h2>
+		<p>Generate randomized passwords for maximum privacy and security.</p>
 
-		<input placeholder="New password should appear here!" class="generate-space" rows="1" cols="50" id="space" />
-		<i class="fa fa-copy"></i> -->
-		<h2>Password Generator</h2>
 		<div class="result-container">
-			<span id="result">placeholder</span>
-			<i class="fa fa-copy"></i>
+			<span id="result">Anjay</span>
+			<img class="icon" src="https://img.icons8.com/material-outlined/24/000000/copy.png">
 		</div>
 
 
 		<div class="row">
 			<div class="column">
-				<input type="checkbox" name="option" value="0"> Angka<br>	
-				<input type="checkbox" name="option" value="2"> Simbol
+				<span class="caption-chkbox">Length</span>
+				<input type="checkbox" class="option" value="0"><br>
+				<span class="caption-chkbox">Uppercase</span>
+				<input type="checkbox" class="option" value="0">
 			</div>
 			<div class="column">
-				<input type="checkbox" name="option" value="1"> Huruf Kapital<br>
-				<input type="checkbox" name="option" value="3"> Huruf Kecil
+				<span class="caption-chkbox">Numbers</span>
+				<input type="checkbox" class="option" value="1"><br>
+				<span class="caption-chkbox">Lowercase</span>
+				<input type="checkbox" class="option" value="2">
+			</div>
+			<div class="column">
+				<input type="checkbox" class="option" value="3"> Symbols
+			</div>
+			<div class="column">
+				<button class="generate-button"> Generate<br>Password </button>
 			</div>
 		</div>
-		<label>Panjang </label>
-		<input type="text" class="pass-length" placeholder="(Optional)">
-		<footer><br><button class="generate-button"> Generate </button></footer>
 	</body>
 </html>
