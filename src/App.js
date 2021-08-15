@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Password from "./Password";
 import Email from "./Email";
 import Articles from './Articles';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             </Route>
           </Switch>
         </div>
+        <Footer />
       </div>
     </Router>
   );

@@ -19,3 +19,8 @@ body {
   background-size: cover;
   width: 100%;
 }
+
+.page {
+  box-sizing: border-box;
+  min-height: 80vh;
+}

@@ -23,7 +23,7 @@
 }
 
 .email {
-    margin-top: 20vh;
+    padding-top: 20vh;
     text-align: center;
     color:white;
     font-family: 'Lato', sans-serif;
@@ -71,21 +71,4 @@ p {
 
 .btn:hover {
     cursor: pointer;
-}
-
-.empty-space {
-    padding-bottom: 200px;
-}
-
-.footer {
-    text-align: center;
-    background-color: #0B100F;
-    text-align: center;
-    font-family: 'Public Sans', sans-serif;
-    font-weight: 500;
-}
-
-.linkClick {
-    text-decoration: none;
-    color: white;
 }
