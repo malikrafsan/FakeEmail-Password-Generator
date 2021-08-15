@@ -1,0 +1,45 @@
+
+body{
+	background-image: url(background-image.png);
+	background-color: black;
+	color: white;
+}
+
+.row:after{
+	display: table;
+	content: "";
+	clear: both;
+}
+
+.column{
+	float: left;
+	padding: 10px;
+	height: 40px;
+}
+
+
+.generate-space{
+	background: transparent;
+	outline: none;
+	width: 15%;
+	padding: 0.5%;
+	border-radius: 2vh;
+	border-bottom: 3px solid white;
+}
+.result-container {
+	text-align: center;
+	width: 30%;
+	padding: 1%;
+	border-bottom: 3px solid white;
+}
+.fa-copy {
+	float: right;
+}
+
+.generate-button{
+	background: rgba(0, 200, 100, .5);
+	color: white;
+	padding: 14px 20px;
+	border-radius: 18px;
+	border-color: white;
+}

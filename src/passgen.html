@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Password Generator</title>
+		<link rel="stylesheet" type="text/css" href="passgen.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<!-- Hapus tag <label for="space"> dan propery id="space" di <textarea> biar mirip sama yang di Figma-->
+		<!-- <label for="space">Password Generator<br></label>
+
+		<input placeholder="New password should appear here!" class="generate-space" rows="1" cols="50" id="space" />
+		<i class="fa fa-copy"></i> -->
+		<h2>Password Generator</h2>
+		<div class="result-container">
+			<span id="result">placeholder</span>
+			<i class="fa fa-copy"></i>
+		</div>
+
+
+		<div class="row">
+			<div class="column">
+				<input type="checkbox" name="option" value="0"> Angka<br>	
+				<input type="checkbox" name="option" value="2"> Simbol
+			</div>
+			<div class="column">
+				<input type="checkbox" name="option" value="1"> Huruf Kapital<br>
+				<input type="checkbox" name="option" value="3"> Huruf Kecil
+			</div>
+		</div>
+		<label>Panjang </label>
+		<input type="text" class="pass-length" placeholder="(Optional)">
+		<footer><br><button class="generate-button"> Generate </button></footer>
+	</body>
+</html>
