@@ -1,6 +1,7 @@
 import './Email.css';
 import { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import { Link } from "react-router-dom";
 
 const Email = () => {
   // CONTOH FUNGSI
@@ -39,6 +40,12 @@ const Email = () => {
       <button className="btn generate-btn" onClick={updateEmail}>
         Generate E-mail
       </button>
+      <div className="empty-space">&nbsp;</div>
+      <footer className="footer">
+        <Link to="INSERT_URL_TO_MABAR'S_GITHUB" className="linkClick">
+            Get the codes at our Github repo
+        </Link>
+      </footer>
     </div>
   );
 }
