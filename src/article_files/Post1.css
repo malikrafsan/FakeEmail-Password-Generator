@@ -30,6 +30,13 @@
     object-fit: cover;
 }
 
+.author {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #8A8A8A;
+}
+
 .post1P1 {
     font-family: 'Public Sans', sans-serif;
     font-size: 20px;

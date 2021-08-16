@@ -19,10 +19,8 @@ const Post1 = () => {
                     alt="Surveillance in China"
                     className="post1ImgTitle"
                 />
-                <p className="post1P1">
-                    <b>Bagaimana cara hacker menembus sistem?</b>
-                    <br/>
-                    <br/>Sebagian besar dari kita mungkin membayangkan hacker sebagai sekelompok kutu buku ber-hoodie hitam di basement gelap penuh kabel dan bungkus pop mie, meneliti satu per satu kelemahan apapun di desain sistem pemerintah sementara jarinya mengetik dengan sangat cepat. Barangkali ini memang ada, tetapi kenyataan di lapangan jauh lebih sederhana. Menurut Global Fraud and Risk Report 2019/2020 oleh Kroll, 66% - hampir dua per tiga - kebocoran keamanan disebabkan oleh faktor internal. Kalau begitu, apakah risiko terbesar adalah orang dalam yang licik? Tidak juga: dari masalah internal itu, oleh Ponemon diperkirakan bahwa 63% nya disebabkan oleh keteledoran karyawan.
+                <span className="author">Zhillan Attarizal-R, 14 Agustus 2021</span>
+                <p className="post1P1"><br/>Sebagian besar dari kita mungkin membayangkan hacker sebagai sekelompok kutu buku ber-hoodie hitam di basement gelap penuh kabel dan bungkus pop mie, meneliti satu per satu kelemahan apapun di desain sistem pemerintah sementara jarinya mengetik dengan sangat cepat. Barangkali ini memang ada, tetapi kenyataan di lapangan jauh lebih sederhana. Menurut Global Fraud and Risk Report 2019/2020 oleh Kroll, 66% - hampir dua per tiga - kebocoran keamanan disebabkan oleh faktor internal. Kalau begitu, apakah risiko terbesar adalah orang dalam yang licik? Tidak juga: dari masalah internal itu, oleh Ponemon diperkirakan bahwa 63% nya disebabkan oleh keteledoran karyawan.
                     <br/>
                     <br/>Sesempurna dan secanggih apapun sistem keamanan siber suatu institusi, tidak ada gunanya jika hacker berhasil menipu penggunanya ketika sedang berada di luar pengawasan sistem itu. Ancaman keamanan siber semacam ini disebut phising, dan tidak ada yang benar-benar aman dari serangan ini. Yang jelas, tidak John Podesta, bos tim kampanye Hillary Clinton yang terjebak phising dan menyebabkan bocornya tak terhitung e-mail pribadi Clinton, sehingga berpengaruh dalam kekalahan sang capres pada 2016.
                     <br/>
