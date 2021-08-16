@@ -1,85 +1,100 @@
-document.getElementById('clipboard');
+import './Password.css';
+import { useState } from "react";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
-const randomFunc = {
-    lower: getRandomLower,
-    upper: getRandomUpper,
-    number: getRandomNumber,
-    symbol: getRandomSymbol
-}
+const Password = () => {
+  const [lenValue, setLenValue] = useState("20");
+  const [uppercaseChecked, setUppercaseChecked] = useState(true);
+  const [lowercaseChecked, setLowercaseChecked] = useState(true);
+  const [symbolChecked, setSymbolChecked] = useState(true);
+  const [numberChecked, setNumberChecked] = useState(true);
+  const [Pass, setPass] = useState("");
 
-clipboard.addEventListener('click', () => {
-    const textarea = document.createElement('textarea');
-    const password = resultEl.innerText;
-
-    if (!password) { return; }
-
-    textarea.value = password;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand('copy');
-    textarea.remove();
-    alert('Password copied to clipboard');
-});
-
-generate.addEventListener('click', () => {
-    const length = +lengthEl.value;
-    const hasLower = lowercaseEl.checked;
-    const hasUpper = uppercaseEl.checked;
-    const hasNumber = numbersEl.checked;
-    const hasSymbol = symbolsEl.checked;
-
-    resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
-});
-
-function generatePassword(lower, upper, number, symbol, length) {
-    let generatedPassword = '';
-    const typesCount = lower + upper + number + symbol;
-    const typesArr = [{ lower }, { upper }, { number }, { symbol }].filter(item => Object.values(item)[0]);
-
-    // Doesn't have a selected type
-    if (typesCount === 0) {
-        return '';
-    }
-
-    // create a loop
-    for (let i = 0; i < length; i += typesCount) {
-        typesArr.forEach(type => {
-            const funcName = Object.keys(type)[0];
-            generatedPassword += randomFunc[funcName]();
-        });
-    }
-
-    const finalPassword = generatedPassword.slice(0, length);
-
-    return finalPassword;
-}
-
-function getRandomLower() {
+  const getRandomLower = () => {
     return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
-}
-
-function getRandomUpper() {
+  }
+  const getRandomUpper = () => {
     return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
-}
-
-function getRandomNumber() {
+  }
+  const getRandomNumber = () => {
     return +String.fromCharCode(Math.floor(Math.random() * 10) + 48);
-}
-
-function getRandomSymbol() {
+  }
+  const getRandomSymbol = () => {
     const symbols = '!@#$%^&*(){}[]=<>/,.'
     return symbols[Math.floor(Math.random() * symbols.length)];
+  }
+
+  const randomFunc = {
+    lowercaseChecked: getRandomLower,
+    uppercaseChecked: getRandomUpper,
+    numberChecked: getRandomNumber,
+    symbolChecked: getRandomSymbol
+  }
+
+  const updatePass = () => {
+    const changedPass = generatePassword();
+    setPass(changedPass);
+  }
+
+  const generatePassword = () => {
+    let changedPass = "";
+    const typesCount = uppercaseChecked + lowercaseChecked + symbolChecked + numberChecked;
+    const typesArr = [{uppercaseChecked}, {lowercaseChecked}, {numberChecked}, {symbolChecked}].filter(item => Object.values(item)[0]);
+
+    if (typesCount === 0) {
+      return "";
+    }
+
+    for (let i=0;i<lenValue; i+=typesCount) {
+      let tempPass = "";
+      typesArr.forEach(type => {
+        const funcName = Object.keys(type)[0];
+        tempPass += randomFunc[funcName]();
+      });
+      changedPass += tempPass;
+    }
+
+    const finalPass = changedPass.slice(0,lenValue);
+    return finalPass;
+  }
+
+  const handleClipboardClick = (e) => {
+    alert('Password copied to clipboard');
+  }
+
+  return (
+    <div className="password page">
+      <h1>Passwordmu di tanganmu.</h1>
+      <p>Generate randomized passwords for maximum privacy and security.</p>
+
+      <div className="result-container">
+        <span id="result">{Pass}</span>
+        <CopyToClipboard text={Pass} onCopy={handleClipboardClick}>
+          <img className="icon" src="https://img.icons8.com/material-outlined/24/000000/copy.png" alt="clipboard icon"></img>
+        </CopyToClipboard>
+      </div>
+      <div className="row">
+        <div className="column">
+          <label className="caption-chkbox">Length</label>
+          <input type="number" className="option length" min="4" max="20" value={lenValue} onChange={(e) => setLenValue(e.target.value)} /><br />
+          <span className="caption-chkbox">Uppercase</span>
+          <input type="checkbox" className="option" onChange={() => setUppercaseChecked(!uppercaseChecked)} checked={uppercaseChecked} />
+        </div>
+        <div className="column">
+          <span className="caption-chkbox">Numbers</span>
+          <input type="checkbox" className="option" onChange={() => setNumberChecked(!numberChecked)} checked={numberChecked} /><br />
+          <span className="caption-chkbox">Lowercase</span>
+          <input type="checkbox" className="option" onChange={() => setLowercaseChecked(!lowercaseChecked)} checked={lowercaseChecked} />
+        </div>
+        <div className="column">
+          <input type="checkbox" className="option" onChange={() => setSymbolChecked(!symbolChecked)} checked={symbolChecked} /> Symbols
+        </div>
+        <div className="column">
+          <button className="generate-button" onClick={updatePass}> Generate<br />Password </button>
+        </div>
+      </div>
+    </div>
+  );
 }
-
-// SOCIAL PANEL JS
-const floating_btn = document.querySelector('.floating-btn');
-const close_btn = document.querySelector('.close-btn');
-const social_panel_container = document.querySelector('.social-panel-container');
-
-floating_btn.addEventListener('click', () => {
-    social_panel_container.classList.toggle('visible')
-});
-
-close_btn.addEventListener('click', () => {
-    social_panel_container.classList.remove('visible')
-});
+ 
+export default Password;
