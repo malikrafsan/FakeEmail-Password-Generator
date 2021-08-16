@@ -28,7 +28,7 @@ const Email = () => {
 
   return (
     <div className="email page">
-      <h1>E-mail mu di tanganmu.</h1>
+      <h1>E-mailmu di tanganmu.</h1>
       <p>Generate usable, temporary e-mail for maximum privacy and security.</p>
       <div className="email-box">
         <span className="email-txt">{fakeEmail}</span>
